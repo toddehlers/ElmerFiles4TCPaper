@@ -1,4 +1,11 @@
-! Get BMB as Function of Ice Thickness, GL Position and Distance.
+! This function computes basal melting as a function of distance from the
+! grounding line. It follows exactly Favier et al. 2016 (TC, Dynamic influence
+! of pinning points on marine ice-sheet stability: a numerical study in Dronning
+! Maud Land, East Antarctica). Parameters are hardcoded at the end of the
+! function. These hardcoded parameters could easily be written into the sif file
+! and the function could query the parameters.
+!Clemens Schannwell 10.09.2019
+
 FUNCTION GetBMB ( Model, nodenumber, x) RESULT(BMBOut)
    USE types
    USE CoordinateSystems
@@ -36,6 +43,7 @@ FUNCTION GetBMB ( Model, nodenumber, x) RESULT(BMBOut)
    BMBOut = DepthVal(DepthPerm(nodenumber))**alpha*(rho*G+(1-rho)*A)
 
 END FUNCTION GetBMB
+!THE END of the FUNCTION
 
 
 
