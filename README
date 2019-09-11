@@ -1,0 +1,23 @@
+These directories contain a number of sample files that were used to performed
+the simulations in Schannwell et al 2019: "Kinematic response of ice-rise
+divides to changes in ocean and atmosphere forcing". The work is published in
+the journal the Cryosphere.
+
+1. The InputFiles directory contains a inputfiles such as bedrock topo etc that are
+needed for Elmer.
+
+2. The UserFunctions directory contains a couple of customised userfunctions
+that were used in the simulations.
+
+3. The directories SMBPerturbation and ShelfPerturbation contain sample sif
+files for the SMB perturbation runs (Runs 3-5 in the paper) and the no shelf
+perturbation runs (Runs 7-9 in the paper).
+
+To use these sif files for simulations in Elmer a corresponding mesh file will
+also be necessary. Rather than being able to use these files out-of-the-box in
+Elmer/Ice, these files should provide some help for future users.
+
+
+Last updated on September 11 2019 by Clemens Schannwell
+
+
